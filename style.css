@@ -175,16 +175,16 @@ body {
   margin-bottom: 4em;
 }
 
-.nav-bar img {
+/* .nav-bar img {
   width: 100px;
-}
+} */
 
 .game-pic1 img {
   width: 100%;
 }
 
 .game-pic2 img {
-  width: 90%;
+  width: 100%;
 }
 
 .game-text1 {
@@ -226,11 +226,12 @@ body {
 
 .game2 {
   display: flex;
-  padding-left: 3em;
+ 
 }
 
 .game-text2 {
   flex: 1;
+  padding-left: 3em;
 }
 
 .button2 {
@@ -239,7 +240,7 @@ body {
   color: yellow;
   outline-offset: 3px;
   border: 1px solid white;
-  padding: 20px 70px;
+  padding: 15px 20px;
   font-size: 2rem;
   word-spacing: 1px;
   letter-spacing: 12px;
@@ -248,7 +249,7 @@ body {
 }
 
 .button2:hover {
-  padding: 30px 110px;
+  padding: 30px 30px;
   font-weight: 900;
   transition: all;
   background-color: crimson;
@@ -363,7 +364,7 @@ body {
   .gaming-1 {
     align-items: center;
     background: rgb(12, 12, 12);
-    box-shadow: 2px 5px 2px rgba(255, 255, 255, 0.484);
+    box-shadow: 2px 2px 5px rgba(209, 209, 209, 0.466);
     width: 80%;
   }
 
@@ -397,12 +398,9 @@ body {
     filter: brightness(0.7);
   }
 
-  .hover-text {
-    font-size: 2.5rem;
+  .hover-text,  .title h2 {
+    font-size: 2rem;
     opacity: 1;
-  }
-  .title h2 {
-    font-size: 3em;
   }
 
   section {
