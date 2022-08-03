@@ -76,7 +76,7 @@ button:hover {
   background: #181f2a;
 }
 
-@media (max-width: 500px) and (min-width: 300px) {
+/* @media (max-width: 500px) and (min-width: 300px) {
   header {
     top: 40px;
     left: 550;
@@ -92,7 +92,7 @@ button:hover {
     margin-left: 0;
     flex-direction: column;
   }
-}
+} */
 
 /* ------------------------victor------------------------ */
 
@@ -107,29 +107,34 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+
+.gaming, .gaming-1{
+    background: linear-gradient(to right, white, rgba(0, 0, 0, 0.788));
+}
+
 .gaming {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 30px;
   margin-left: 250px;
   padding: 20px 30px;
-  background: linear-gradient(to right white, black);
   border-radius: 20px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.452);
-  background: linear-gradient(to right, white, rgba(0, 0, 0, 0.788));
+  /* background: linear-gradient(to right, white, rgba(0, 0, 0, 0.788)); */
   width: 60%;
   transition: all 300ms ease-in-out;
 }
 
 .gaming-1 {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 30px;
   margin-right: 90px;
   margin-left: 30px;
   padding: 20px 30px;
   border-radius: 20px;
-  flex-wrap: wrap;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.452);
-  background: linear-gradient(to right, white, rgba(0, 0, 0, 0.788));
+  /* background: linear-gradient(to right, white, rgba(0, 0, 0, 0.788)); */
   width: 60%;
   transition: all 300ms ease-in-out;
 }
@@ -279,7 +284,7 @@ body {
 }
 
 .title span {
-    color: yellow;
+  color: yellow;
 }
 
 .grid {
@@ -341,7 +346,7 @@ body {
 }
 /* ----------------------------------victor's MQ ----------------------------- */
 
-@media (max-width: 1060px) and (min-width: 949px) {
+/* @media (max-width: 1060px) and (min-width: 949px) {
   .text h2 {
     font-size: 2rem;
   }
@@ -351,36 +356,51 @@ body {
   .text h2 {
     font-size: 1.7rem;
   }
-}
+} */
 
 @media (max-width: 840px) and (min-width: 320px) {
-  .gaming {
-    flex-direction: column;
-    margin-right: 0;
-    margin: 20 auto;
+  body {
+    background: linear-gradient(to right, white, rgba(0, 0, 0, 0.788))
+  }
+
+.gaming, .gaming-1 {
     align-items: center;
+    background:  rgb(12, 12, 12);
+}
+
+  .gaming {
+    margin: 2em auto;
   }
 
   .gaming-1 {
-    flex-direction: column;
-    align-items: center;
-    margin: 20 auto;
+    margin: 0 auto;
   }
+
   .text {
     width: 100%;
   }
 
+  .text h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
   .grid {
+    background-color: #fff;
     flex-direction: column;
     padding: 0 0.5em;
   }
 
+  .image {
+    width: 100%;
+  }
+
   .image1 img {
-    filter: brightness(0.5);
+    filter: brightness(0.7);
   }
 
   .hover-text {
-    font-size: 2rem;
+    font-size: 2.5rem;
     opacity: 1;
   }
   .title h2 {
