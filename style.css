@@ -107,9 +107,9 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-
-.gaming, .gaming-1{
-    background: linear-gradient(to right, white, rgba(0, 0, 0, 0.788));
+.gaming,
+.gaming-1 {
+  background: linear-gradient(to right, white, rgba(0, 0, 0, 0.788));
 }
 
 .gaming {
@@ -359,14 +359,12 @@ body {
 } */
 
 @media (max-width: 840px) and (min-width: 320px) {
-  body {
-    background: linear-gradient(to right, white, rgba(0, 0, 0, 0.788))
-  }
-
-.gaming, .gaming-1 {
+  .gaming,
+  .gaming-1 {
     align-items: center;
-    background:  rgb(12, 12, 12);
-}
+    background: rgb(12, 12, 12);
+    width: 80%;
+  }
 
   .gaming {
     margin: 2em auto;
@@ -386,7 +384,6 @@ body {
   }
 
   .grid {
-    background-color: #fff;
     flex-direction: column;
     padding: 0 0.5em;
   }
@@ -405,6 +402,10 @@ body {
   }
   .title h2 {
     font-size: 3em;
+  }
+
+  section {
+    margin-top: 3em;
   }
 }
 
