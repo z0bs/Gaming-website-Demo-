@@ -363,6 +363,7 @@ body {
   .gaming-1 {
     align-items: center;
     background: rgb(12, 12, 12);
+    box-shadow: 2px 5px 2px rgba(255, 255, 255, 0.484);
     width: 80%;
   }
 
