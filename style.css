@@ -267,7 +267,7 @@ body {
 }
 
 .button2:hover {
-  padding: 30px 110px;
+  padding: 30px 75px;
   font-weight: 900;
   transition: all;
   background-color: crimson;
