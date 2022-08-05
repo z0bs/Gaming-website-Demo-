@@ -1,47 +1,66 @@
 /* ----------------------before content-------------------------- */
-/* ---------------------header --------------------------- */
+/* header {
+  margin-bottom: 2em;
+} */
 
-.hero {
-  transition: all 100ms ease-in-out;
-  margin-bottom: 3em;
+.nav-bar {
+  color: white;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: sans-serif;
 }
-.hero:hover {
-  filter: brightness(0.4);
+.nav-bar h1{
+  color: purple;
+  font-weight: 900;
+}
+body {
+  background-color: black;
 }
 
-.hero:hover .hero-text {
-  filter: brightness(1);
+a {
+  text-decoration: none;
+  color: white;
 }
-hr {
-  margin: 3em;
-  width: 70%;
-  /* padding: 0 2em; */
+
+.poo li {
+  display: inline;
+  margin-left: 20px;
 }
-.nav-bar li {
+
+
+.poo2 li {
+  margin-left: 20px;
   color: white;
   display: inline;
-  margin-left: 50px;
+  padding: 20px;
 }
 
-li {
-  list-style: none;
+.poo2 {
+  justify-content: space-between;
+  align-items: center;
 }
 
-header {
-  padding: 30px 50px;
-  position: fixed;
-  background-color: #181f2a;
-  top: 40px;
-  left: 550;
-  right: 0;
-  border: 1px solid white;
+.extra-games {
+  background-color: rgb(99, 99, 14);
+  margin-right: 10px;
+}
+
+.poo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em 0;
+  padding: 2em;
 }
 
 .hero {
   width: 100%;
   height: 100vh;
-  background: url(./images/Assasins-creed.jpg);
+  background: url("./images/Assasins-creed.jpg");
   background-repeat: no-repeat;
+  filter: brightness(.4);
 }
 
 .hero-text {
@@ -50,14 +69,22 @@ header {
   top: 50%;
   left: 20%;
   right: 20%;
+  color: white;
+}
+
+hr {
+  width: 50%;
+  margin: 45px auto;
+  border: none;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 1));
 }
 
 .hero-text h1 {
+  font-size: 3rem;
   letter-spacing: 20px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  word-spacing: 30px;
-  margin-bottom: 20px;
-  font-size: 50px;
+  word-spacing: 10px;
+  z-index: 2;
 }
 
 button {
@@ -65,34 +92,20 @@ button {
   outline: 2px solid whitesmoke;
   outline-offset: 3px;
   border: 1px solid white;
-  padding: 20px 70px;
-  margin: 30px;
-  font-size: larger;
+  padding: 20px 60px;
+  margin: 2em auto;
+  font-size: large;
+  transition: all 300ms ease-in-out;
 }
 
 button:hover {
-  padding: 30px 80px;
+  padding: 30px 70px;
   font-weight: 900;
-  background: #181f2a;
+  background: crimson;
 }
 
-/* @media (max-width: 500px) and (min-width: 300px) {
-  header {
-    top: 40px;
-    left: 550;
-  }
 
-  .hero {
-    width: 100%;
-    margin-left: 0;
-    flex-direction: column;
-  }
-
-  .nav-bar {
-    margin-left: 0;
-    flex-direction: column;
-  }
-} */
+/* ------------------------------header end-------------------------------- */
 
 /* ------------------------victor------------------------ */
 
@@ -169,22 +182,25 @@ body {
   width: 70%;
 }
 
+.games {
+  margin-top: 2em;
+}
 /* -----------------------------------chukwuemeka----------------------- */
 
 .section-two {
   margin-bottom: 4em;
 }
 
-/* .nav-bar img {
+.nav-bar img {
   width: 100px;
-} */
+}
 
 .game-pic1 img {
   width: 100%;
 }
 
 .game-pic2 img {
-  width: 100%;
+  width: 90%;
 }
 
 .game-text1 {
@@ -226,12 +242,11 @@ body {
 
 .game2 {
   display: flex;
- 
+  padding-left: 3em;
 }
 
 .game-text2 {
   flex: 1;
-  padding-left: 3em;
 }
 
 .button2 {
@@ -240,7 +255,7 @@ body {
   color: yellow;
   outline-offset: 3px;
   border: 1px solid white;
-  padding: 15px 20px;
+  padding: 20px 70px;
   font-size: 2rem;
   word-spacing: 1px;
   letter-spacing: 12px;
@@ -249,7 +264,7 @@ body {
 }
 
 .button2:hover {
-  padding: 30px 30px;
+  padding: 30px 110px;
   font-weight: 900;
   transition: all;
   background-color: crimson;
@@ -364,7 +379,7 @@ body {
   .gaming-1 {
     align-items: center;
     background: rgb(12, 12, 12);
-    box-shadow: 2px 2px 5px rgba(209, 209, 209, 0.466);
+    box-shadow: 2px 5px 2px rgba(255, 255, 255, 0.484);
     width: 80%;
   }
 
@@ -398,9 +413,12 @@ body {
     filter: brightness(0.7);
   }
 
-  .hover-text,  .title h2 {
-    font-size: 2rem;
+  .hover-text {
+    font-size: 2.5rem;
     opacity: 1;
+  }
+  .title h2 {
+    font-size: 3em;
   }
 
   section {
@@ -439,5 +457,45 @@ body {
   }
   .game-text2 {
     width: 100%;
+  }
+}
+
+
+/* -------------------------header MQ--------------- */
+@media(max-width: 498px) {
+  .hero-text h1 {
+      font-size: 1.5rem;
+  }
+
+  .nav-bar {
+      flex-direction: column;
+      width: 95%;
+  }
+
+  .hero {
+      width: 50%;
+  }
+
+  .hero img {
+      width: 50%;
+      background: none;
+      background-color: black;
+  }
+
+  .extra-games {
+      visibility: hidden;
+  }
+
+  .poo {
+      flex-direction: column;
+  }
+
+  ul {
+      display: flex;
+      flex-direction: column;
+  }
+
+  span {
+      visibility: hidden;
   }
 }
